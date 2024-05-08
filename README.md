@@ -1,18 +1,18 @@
-## The cheapest and easiest Solution i could find for better IRL Streaming (for IPhone)<!-- omit from toc -->
+**The cheapest and easiest Solution i could find for better IRL Streaming (for IPhone)**
 
-Schematic Overview
+# Schematic
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/2ec96f0e-5e8e-4693-a3cf-0f97a35c9f09" height="1000">
 
 At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Set-Up Process and explain alongside.
-## Positive <!-- omit from toc -->
+**Positive**
 - 👍 can be used with a single Internet connection from Phone
 - 👍 when connection is failing from Phone to Internet, the Viewer will still see Videos/Clips
 - 👍 a second internet can be added to make Phone Stream more reliable
 - 👍 when switching from WiFi to Mobile and back stream is not going offline
-## Negative <!-- omit from toc -->
+**Negative**
 - 👎 Additional monthly cost for Relay Server ($10 USD)
-- 👎 Additional monthly cost for 2nd Internet if (Optional)
+- 👎 Additional monthly cost for 2nd Internet (Optional)
 - 👎 Takes some time for first Setup
 ---
 # Streaming Phone
@@ -185,26 +185,26 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 We are finished with the basic Setup, but the Scenes are pretty emtpy.
 Following is an Explanation on what Scene is used for what and what People normally put in. These are just recommendations. Feel free to design however you want.
 
-### Starting <!-- omit from toc -->
+**Starting**
 - Every time the Stream starts with this scene until the phone is live
 - Video+Music is often used as Background
 - simple Text "Starting Soon ..."
-### Live <!-- omit from toc -->
+**Live**
 - As soon as there is a connection from the Phone to OBS this will be shown
 - No additional things needed, since Overlays should run on the Phone
-### Low <!-- omit from toc -->
+**Low**
 - When connection to the Phone is bad quality
 - simple Text "low bitrate"
-### Disconnected <!-- omit from toc -->
+**Disconnected**
 - When the connection to Phone is lost completely this is shown
 - old Stream or Clips are often used
 - simple Text "Lost connection..." on Top
 - simple Text "Be right back"
-### Privacy <!-- omit from toc -->
+**Privacy**
 - Can be activated by writing !privacy in Twitch-Chat
 - Similar to Disconnected
 - Can be switched to when you go to Toilet or have private Conversation for a few Minutes
-### Ending <!-- omit from toc -->
+**Ending**
 - Can be activated by writing !ending in Twitch-Chat
 - Similar to Starting Video+Music
 - Simple Text "Ending Stream"
