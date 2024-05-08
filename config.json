@@ -1,0 +1,87 @@
+{
+  "user": {
+    "id": null,
+    "name": "REPLACE_STREAMER_NAME",
+    "passwordHash": null
+  },
+  "switcher": {
+    "bitrateSwitcherEnabled": true,
+    "onlySwitchWhenStreaming": false,
+    "instantlySwitchOnRecover": true,
+    "autoSwitchNotification": false,
+    "retryAttempts": 5,
+    "triggers": {
+      "low": 800,
+      "rtt": 1500,
+      "offline": 300
+    },
+    "switchingScenes": {
+      "normal": "Live",
+      "low": "Low",
+      "offline": "Disconnected"
+    },
+  "streamServers": [
+  {
+    "streamServer": {
+      "type": "Belabox",
+      "statsUrl": "REPLACE_BELLABOX_URL",
+      "publisher": "REPLACE_OBS_WEBSOCKET_PASSWORD"
+    },
+    "name": "BELABOX cloud",
+    "priority": 0
+      }
+    ]
+  },
+  "software": {
+    "type": "Obs",
+    "host": "localhost",
+    "password": "REPLACE_OBS_WEBSOCKET_PASSWORD",
+    "port": 4455,
+    "collections": {
+      "twitch": {
+        "profile": "Untitled",
+        "collection": "Untitled"
+      }
+    }
+  },
+  "chat": {
+    "platform": "Twitch",
+    "username": "REPLACE_STREAMER_NAME",
+    "admins": ["REPLACE_STREAMER_NAME"],
+    "language": "EN",
+    "prefix": "!",
+    "enablePublicCommands": false,
+    "enableModCommands": true,
+    "enableAutoStopStreamOnHostOrRaid": true,
+    "announceRaidOnAutoStop": true,
+    "commands": {
+      "Fix": {
+        "permission": "Mod",
+        "alias": ["fix"]
+      },
+      "Switch": {
+        "permission": "Mod",
+        "alias": ["sw"]
+      },
+      "Bitrate": {
+        "permission": "Mod",
+        "alias": ["br"]
+      }
+    }
+  },
+  "optionalScenes": {
+    "starting": "Starting",
+    "ending": "Ending",
+    "privacy": "Break",
+    "refresh": "Refresh"
+  },
+  "optionalOptions": {
+    "twitchTranscodingCheck": false,
+    "twitchTranscodingRetries": 5,
+    "twitchTranscodingDelaySeconds": 15,
+    "offlineTimeout": 900,
+    "recordWhileStreaming": false,
+    "switchToStartingSceneOnStreamStart": true,
+    "switchFromStartingSceneToLiveScene": true
+  }
+}
