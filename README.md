@@ -1,16 +1,16 @@
-## The cheapest and easiest Solution i could find for better IRL Streaming (for IPhone)
+## The cheapest and easiest Solution i could find for better IRL Streaming (for IPhone)<!-- omit from toc -->
 
 Schematic Overview
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/2ec96f0e-5e8e-4693-a3cf-0f97a35c9f09" height="1000">
 
 At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Set-Up Process and explain alongside.
-## Positive 
+## Positive <!-- omit from toc -->
 - 👍 can be used with a single Internet connection from Phone
 - 👍 when connection is failing from Phone to Internet, the Viewer will still see Videos/Clips
 - 👍 a second internet can be added to make Phone Stream more reliable
 - 👍 when switching from WiFi to Mobile and back stream is not going offline
-## Negative
+## Negative <!-- omit from toc -->
 - 👎 Additional monthly cost for Relay Server ($10 USD)
 - 👎 Additional monthly cost for 2nd Internet if (Optional)
 - 👎 Takes some time for first Setup
@@ -185,26 +185,26 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 We are finished with the basic Setup, but the Scenes are pretty emtpy.
 Following is an Explanation on what Scene is used for what and what People normally put in. These are just recommendations. Feel free to design however you want.
 
-### Starting
+### Starting <!-- omit from toc -->
 - Every time the Stream starts with this scene until the phone is live
 - Video+Music is often used as Background
 - simple Text "Starting Soon ..."
-### Live
+### Live <!-- omit from toc -->
 - As soon as there is a connection from the Phone to OBS this will be shown
 - No additional things needed, since Overlays should run on the Phone
-### Low
+### Low <!-- omit from toc -->
 - When connection to the Phone is bad quality
 - simple Text "low bitrate"
-### Disconnected
+### Disconnected <!-- omit from toc -->
 - When the connection to Phone is lost completely this is shown
 - old Stream or Clips are often used
 - simple Text "Lost connection..." on Top
 - simple Text "Be right back"
-### Privacy
+### Privacy <!-- omit from toc -->
 - Can be activated by writing !privacy in Twitch-Chat
 - Similar to Disconnected
 - Can be switched to when you go to Toilet or have private Conversation for a few Minutes
-### Ending
+### Ending <!-- omit from toc -->
 - Can be activated by writing !ending in Twitch-Chat
 - Similar to Starting Video+Music
 - Simple Text "Ending Stream"
@@ -219,11 +219,10 @@ it should automatically switch to **Disconnected** and back as soon as Phone Str
 5. You can manually switch to **Privacy** with the Chat-Command **!privacy** and back with **!live**
 6. To End your Stream you either put **!stop** into Twitch-Chat or you make a Raid to another Streamer
 ---
-# Final Notes
-## 2nd Internet Connection
+# 2nd Internet Connection
 As seen in the Plan there should be 2x Internet Connection for your phone to reduce the chance of outtages for the Live Stream. Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active. For this second SIM a different Provider is highly recommended.
 *Note: that the 2nd Sim will also consume Data*
-## Additional Help
+# Additional Help
 ### Moblin App 
 Here is their [Discord](https://discord.gg/Tm6kf778)
 ### OBS 
