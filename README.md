@@ -74,7 +74,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 ---
 # 4 - Home PC
 Any normal PC or Laptop can be used, best cabled directly to your Home Internet Router. If you want to buy a new one, maybe look into Mini-Pc's.
-*Note: The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac) *
+*Note: The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac)*
 ## 4.1 OBS
 *Note: This is the Programm that converts the Stream back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect*  
 4.1.a **Download [OBS Studio](https://obsproject.com/download)** for your System  
