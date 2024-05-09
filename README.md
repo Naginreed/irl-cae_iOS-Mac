@@ -61,7 +61,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 
 ---
 # 3 - Streaming Phone
-3.a - Open the ** Moblin App**  and go to **Gear** Symbol *(Settings)* on the top right  
+3.a - Open the **Moblin App**  and go to **Gear** Symbol *(Settings)* on the top right  
 3.b - Go to **Streams** and then tap the **Belabox Cloud** one  
 3.c - Go to **Video** and set the following settings  
  - **Resolution:** 1920x1080p  
@@ -186,6 +186,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 [config.json](config.json)  
 4.2.f - **Open** the **config.json** File with a Text-Editor  
  - replace all 3x of *REPLACE_STREAMER_NAME* with your Twitch Account Name
+
 4.2.g - open the Open the **[Belabox Cloud](https://cloud.belabox.net/#relays)** Page and go to **SRT(LA) relays**  
  - Scroll down to **NOALBSv2 configuration**
  - replace *REPLACE_BELLABOX_URL* with the URL from the Belabox Page
