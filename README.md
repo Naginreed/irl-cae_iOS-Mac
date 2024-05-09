@@ -286,7 +286,7 @@ it should automatically switch to **Disconnected** and back as soon as Phone Str
 As seen in the Plan there should be 2x Internet Connection for your phone to reduce the chance of outtages for the Live Stream.  
 Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active. For this second SIM a different Provider is highly recommended.   
 > [!IMPORTANT]  
-> The 2nd Sim will also consume Data ~50% in average
+> The 2nd Sim will also consume about ~50% of the overall Data
 
 ---
 # 9 - Additional Help  
