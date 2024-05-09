@@ -20,8 +20,11 @@ At first this looks pretty complicated, but we will go Step-by-Step with Picture
 - 👎 Takes some time for first Setup
 ---
 # 1 - Streaming Phone  
+
 *Note: If you have multiple phones, use the strongest/newest one as Streaming Phone*
+
 1.a Install the **[Moblin App](https://apps.apple.com/us/app/moblin/id6466745933)** from the Apple Play Store
+
 ---
 # 2 - SRT/SRTLA Relay
 2.a Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*
@@ -46,6 +49,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/8425c1a1-add3-40d1-8082-b03312429539" height="600">
 
 2.f Scroll down until you see **Moblin Settings** and tap the **Add automatically to Moblin** Button to automatically add the right Server Info in Moblin.  
+
 ---
 # 3 - Streaming Phone
 3.a Open the ** Moblin App**  and go to **Gear** Symbol *(Settings)* on the top right  
@@ -225,6 +229,7 @@ Following is an Explanation on what Scene is used for what and what People norma
 - Simple Text "Ending Stream"
 ---
 # 6 - First Test  
+
 6.a to Start the stream, go into your Twitch Chat and enter **!start**  
 OBS will now start the Stream in the **Starting**-Scene  
 6.b Go to your Streaming Phone into the **Moblin**-App and start your Stream there  
@@ -233,18 +238,23 @@ OBS will now start the Stream in the **Starting**-Scene
 it should automatically switch to **Disconnected** and back as soon as Phone Stream is ok again.  
 6.e You can manually switch to **Privacy** with the Chat-Command **!privacy** and back with **!live**  
 6.f To End your Stream you either put **!stop** into Twitch-Chat or you make a Raid to another Streamer  
+
 ---
-# 7 - Normal Operation  
+# 7 - Normal Operation 
+
 Before **every** IRL-Stream you need to do the following  
 7.a **Start** your **PC** at Home an make sure it has a Internet Connection and doesn't turn off automatically  
 7.b **Go outside** to where you want to start to stream  
 7.c Enter **!start** in **Twitch-Chat** to start Stream to Twitch  
 7.d **Start Stream in Moblin App**, after a few seconds you are live  
 7.e Enter **!stop** in **Twitch-Chat** or **Raid another streamer** to stop Stream  
+
 ---
 # 8 - 2nd Internet Connection  
+
 As seen in the Plan there should be 2x Internet Connection for your phone to reduce the chance of outtages for the Live Stream. Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active. For this second SIM a different Provider is highly recommended.  
 *Note: that the 2nd Sim will also consume Data*  
+
 ---
 # 9 - Additional Help  
 ### Moblin App 
