@@ -43,8 +43,8 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 2.b - Once logged in open the [Belabox Sponsorship](https://github.com/sponsors/rationalsa) Page  
  - Scroll down and select the **$10 a month** Tier which includes 1x SRT/SRTLA Relay Server
  - Fill out your Billing Info and Set Up your Payment Info *(Only Credit Card or Paypal supported)*
- - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.
-2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and Login/Authorize with your Github Account
+ - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.  
+2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and Login/Authorize with your Github Account  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/5385a7b6-e1c4-42ac-a5a1-729cf53dc732" height="600">
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/f8b19ac5-7862-4097-8701-78001048d003" height="600">
@@ -67,7 +67,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
  - **Resolution:** 1920x1080p  
  - **FPS:** fixed 30fps  
  - **Bitrate:** 5900 kbps  
- - **Format:** (h2.65)hevc
+ - **Codec:** HEVC(h2.65)
 
 3.d - Go to **Chat** and follow Instructions to Connect Twitch Chat  
 3.e - Next we want to add our Alerts to Moblin. To do this we go to into our Alerts Dashboard via Browser  
