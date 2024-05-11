@@ -67,7 +67,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
  - **Resolution:** 1920x1080p  
  - **FPS:** fixed 30fps  
  - **Bitrate:** 5900 kbps  
- - **Format:** h.264
+ - **Format:** (h2.65)hevc
 
 3.d - Go to **Chat** and follow Instructions to Connect Twitch Chat  
 3.e - Next we want to add our Alerts to Moblin. To do this we go to into our Alerts Dashboard via Browser  
