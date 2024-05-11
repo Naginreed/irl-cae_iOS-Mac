@@ -5,7 +5,9 @@
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/2ec96f0e-5e8e-4693-a3cf-0f97a35c9f09" height="1000">
 
 > [!NOTE]  
-> At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process and explain alongside.
+> At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process.
+> Yes there are completely free methods, but they need more technical expertise and if wrongly configured can be a security risk to your Home PC.
+> With this Method you don't open up any holes in your Security. *(OBS srt caller instead of listener on Home PC)*
 
 **Positives**  
 
@@ -33,7 +35,7 @@
 > [!NOTE]   
 > This Server takes the Two SRTLA Streams and combine them to one
 > [!IMPORTANT]   
-> This Service costs $10 USD, but can be also hosted on your own machine, with enough technical knowledge
+> This Service costs $10 USD. Completely free alternatives are also available but need more technical knowledge to setup
 
 2.a - Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*
 You then need to Verify your E-Mail Address and [Login](https://github.com/login)
@@ -69,17 +71,17 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
  - **Bitrate:** 5900 kbps  
  - **Codec:** HEVC(h2.65)
 
-3.d - Go to **Chat** and follow Instructions to Connect Twitch Chat  
+3.d - Go back then to **Twitch** and enter your Twitch Name and Twitch ID. You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/)  
 3.e - Next we want to add our Alerts to Moblin. To do this we go to into our Alerts Dashboard via Browser  
  - [Streamlabs](https://streamlabs.com/dashboard#/alertbox) and copy the Widget URL
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/255e3ef7-cbd5-4cfa-84a8-17d68c78ccb6" height="600">
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/82365cc6-ade2-458f-b583-ccad4b0b62f1" height="600">
 
-3.f - Head back to Moblin and go to the **Settings** Screen. Tap on **Scenes** then on **Widgets** then **Create**  
+3.f - Head back to Moblin and go to the **Settings** Screen. Tap on **Scenes** then on **Widgets** then **Create**. Name it **Alerts**  
 3.g - Set type to **Browser** and paste the Widget URL into **URL** Field.  
 and Set Width to 1920 and Height to 1080 *(you change size if the Alerts are too big)*  
-3.h - Go back to the **Scenes** Menu. Tap on **My scene** or **Create** a new one Tap Add Widget and select the Widget we just created.  
+3.h - Go back to the **Scenes** Menu. Tap on **My scene** Tap **Add Widget** and add the **Alert**-Widget we just created. Make sure its on the Top of the List.  
 3.i - Go back to the **Main View** and **check** that **Chat** is loading and that **Alerts** are **working** *(Test-Alerts are available in the Dashboard)*  
 
 ---
@@ -104,7 +106,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
  - **Service:** Twitch
  - Connect Account
  - Log in the newly popped up Window.
- - Uncheck the **Estimate bitrate** and enter manually **6000** *(8000 if you're Twitch Partner)*
+ - Uncheck the **Estimate bitrate** and enter manually **5900** *(7900 if you're Twitch Partner)*
  - **Finish** the Wizard
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/a6164a26-5ba9-4219-9c22-c2eb6abfa0e1" height="400">
@@ -122,7 +124,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/344aaedc-92df-41c1-9e65-1dd6223deb0d" width="600">
 
-4.1.e - Click on the Live Scene, and add a **Media Scene** and Create new with name **Belabox Cloud**. 
+4.1.e - Click on the Live Scene, and add a **Media Source** and with name **Belabox Cloud**. 
  - A new Window with settings will open
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/dedc65b3-03c6-4ad0-a2f6-ef907ff541cc" width="600">
@@ -163,7 +165,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 > This is the Program controls the scene switching via Chat and automatically if no incoming Stream is detected
 
 4.2.a - **Download [NOALBS](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching/releases)** for your System and unpack them to a location of your liking  
-4.2.b - Inside this Folder you should have at least 3 files  
+4.2.b - Inside this Folder you should have at least 3 files (4 for [MAC](#421-noalbs-on-mac))  
  - .env
  - config.json
  - noalbs
@@ -208,20 +210,32 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/0329e383-07f3-40e8-8f80-de3d0fa3391d" height="270">
 
 ### 4.2.1 NOALBS on MAC
-You should have these 4 files in the same folder
+You must have these 4 files in the *same folder*
 - .env
 - noalbs
 - config.json
 - launch.sh
 
-4.2.1.a - Make sure .sh files are opened with the Terminal app  
+To keep the files together i recommend to make new folders under Documents -> Stream -> NOALBS
+
+Sometimes .env will not show or download due to the . in the name
+[.env](env)
+Just Download it from here again and place it in the same folder
+
+Open up a Terminal Window and enter command
+`cd /Users/`yourusername`/Documents/Stream/NOALBS`
+where **yourusername** = your username on the MAC and the Path to the folder, if you have a different one. Then hit **Enter**
+`mv env .env` and hit **Enter**
+env File should now vanish in Finder *(You can show it in Finder by pressing* **Command + Shift + .** *)*
+
+4.2.1.a - Make sure .sh files are **always opened** with the Terminal app  
 4.2.1.b - Follow these instructions from Developer  
-`You have to first open the NOALBS executable, in order to do that you need to press and hold the "control" key while opening the NOALBS executable, you should see something like developer not verified and a blue button that says "OPEN", click it, NOALBS should run, you can close it now. After that you can start it with .sh file`  
+`You have to first open the NOALBS executable, and confirm that the developer is not verified, NOALBS should run with Errors. Close it. After that you can start it with .sh file`  
 > [!NOTE]  
 > Opening the launch.sh in the Terminal app will always start up NOALBS from within the directory it is in.
 
 > [!TIP]
-> You can also make an Alias to the launch.sh and put it on the desktop and run it that way.  
+> You can also make an Alias to the launch.sh and put it on the desktop to not forget to run it. 
 
 ---
 # 5 - Make OBS pretty
@@ -245,7 +259,7 @@ Following is an Explanation on what Scene is used for what and what People norma
   
 **Disconnected**
 - When the connection to Phone is lost completely this is shown
-- old Stream or Clips are often used
+- old Stream or Clips are often used (For Clips i recommend a Folder named Clips and adding a VLC Media Source *requires [VLC Media Player](https://www.videolan.org/vlc/)*)
 - simple Text "Lost connection..." on Top
 - simple Text "Be right back"
   
@@ -284,8 +298,9 @@ it should automatically switch to **Disconnected** and back as soon as Phone Str
 ---
 # 8 - 2nd Internet Connection  
 As seen in the Plan there should be 2x Internet Connection for your phone to reduce the chance of outtages for the Live Stream.  
-Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active. For this second SIM a different Provider is highly recommended.   
+Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active.    
 > [!IMPORTANT]  
+> For this second SIM a different Provider is highly recommended.
 > The 2nd Sim will also consume about ~50% of the overall Data
 
 ---
