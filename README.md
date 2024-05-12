@@ -68,7 +68,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 3.c - Go to **Video** and set the following settings  
  - **Resolution:** 1920x1080p  
  - **FPS:** fixed 30fps  
- - **Bitrate:** 5900 kbps  
+ - **Bitrate:** 4500 kbps  
  - **Codec:** HEVC(h2.65)
 
 3.d - Go back then to **Twitch** and enter your Twitch Name and Twitch ID. You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/)  
