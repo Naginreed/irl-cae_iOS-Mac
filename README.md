@@ -20,7 +20,7 @@ This Guide describes a **Cheap and Easy** Solution for
 ---
 # Map
 
-<a href="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499"><img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499">
+<img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499">
 
 > [!NOTE]  
 > At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process.
@@ -50,13 +50,13 @@ This Guide describes a **Cheap and Easy** Solution for
 # 2 - SRT/SRTLA Relay
 
 > [!NOTE]   
-> This Server takes the Two SRTLA Streams and combines them to one SRT Stream
+> This Server takes the Two SRTLA Streams and combines them into one SRT Stream as seen on [Map](#map)
 
 > [!IMPORTANT]   
 > This Service costs $10 USD.
 
-2.a - Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*   
-You then need to Verify your E-Mail Address and [Login](https://github.com/login)
+2.a - Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*
+ - You then need to Verify your E-Mail Address and [Login](https://github.com/login)
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/bafd6a15-7ec2-4f3e-8a1f-7737e41d9a8f" height="600">
 
@@ -65,7 +65,8 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
  - Fill out your Billing Info and setup your Payment Info *(Only Credit Card or Paypal supported)*
  - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.
 
-2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and Login/Authorize with your Github Account  
+2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and
+ - Login/Authorize with your Github Account  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/5385a7b6-e1c4-42ac-a5a1-729cf53dc732" height="600">
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/f8b19ac5-7862-4097-8701-78001048d003" height="600">
@@ -100,14 +101,20 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/255e3ef7-cbd5-4cfa-84a8-17d68c78ccb6" height="600">
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/82365cc6-ade2-458f-b583-ccad4b0b62f1" height="600">
 
-3.f - Head back to Moblin and go to the **Settings** Screen. Tap on **Scenes** then on **Widgets** then **Create**. Name it **Alerts**  
-3.g - Set type to **Browser** and paste the Widget URL into **URL** Field.  
-and Set Width to 1920 and Height to 1080 *(you change size if the Alerts are too big)*  
-3.h - Go back to the **Scenes** Menu. Tap on **My scene** Tap **Add Widget** and add the **Alert**-Widget we just created. Make sure its on the Top of the List.  
-3.i - Go back to the **Main View** and **check** that **Chat** is loading and that **Alerts** are **working** *(Test-Alerts are available in the Dashboard)*  
+3.f - Head back to Moblin and go to the **Settings** Screen. 
+ - Tap on **Scenes** then on **Widgets** then **Create**. 
+ - Name it **Alerts**  
+3.g - Set type to **Browser**
+ - paste the Widget URL into **URL** Field.  
+ - Set Width to 600 and Height to 400 *(you change size if the Alerts are wrong size)*  
+3.h - Go back to the **Scenes** Menu and tap on **My scene** 
+ - Then tap **Add Widget** and choose the **Alert**-Widget we just created.
+ - Make sure its on the Top of the List.  
+3.i - Go back to the **Main View** and **check** that **Chat** is loading and Test that **Alerts** are **working** 
+ - Streamlabs *(Test-Alerts are available in the Dashboard)*  
 
 ---
-# 4 - Home PC
+# 4 - Home-PC
 Any normal PC or Laptop can be used, best cabled directly to your Home Internet Router. If you want to buy a new one for this, maybe look into Mini-Pc's.
 > [!NOTE]  
 > The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac)
