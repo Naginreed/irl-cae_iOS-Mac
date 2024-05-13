@@ -1,19 +1,35 @@
-**The cheapest and easiest Solution i could find for better IRL Streaming (for IPhone)**
+# General Info
+This Guide describes a **Cheap and Easy** Solution for
+- better **IRL**-Streaming 
+- **IPhone (iOS)** as Streaming Phone
+- **Mac/Macbook** as Home PC
 
-# Schematic
+> [!NOTE]  
+> There are completely "free" methods, but they need more technical expertise and if wrongly configured could be a security risk for your Home PC.
+> With this Method you don't open up purposely any holes in your Security. *(No fixed IP | No PF | No FW Changes)*
 
-<img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/2ec96f0e-5e8e-4693-a3cf-0f97a35c9f09" height="1000">
+> [!IMPORTANT]  
+> <details>
+> <summary>You can use the **3 Lines** at the top right to jump to any Section of the Guide</summary>
+> <img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/ddcfa25e-e806-48a7-9882-60fdc8794947">
+> </details>
+---
+### Discord & Ko-Fi
+| <a href="https://discord.gg/XjYy8MySNg"><img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/c194f2f5-dff5-44ba-ab29-b4390752dc03" alt="Naginreed Discord" height="60"></a><br> [Discord Support](https://discord.gg/XjYy8MySNg) | <a href="https://ko-fi.com/naginreed"><img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/29446800-fcff-4170-9ee0-7fec375ddfd8" alt="Naginreed Ko-Fi" height="60"></a><br> [Wanna help me out?](https://ko-fi.com/naginreed)|
+|---|---|
+---
+# Map
+
+<a href="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499"><img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499">
 
 > [!NOTE]  
 > At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process.
-> Yes there are completely free methods, but they need more technical expertise and if wrongly configured can be a security risk to your Home PC.
-> With this Method you don't open up any holes in your Security. *(OBS srt caller instead of listener on Home PC)*
 
 **Positives**  
 
 - 👍 can be used with a single Internet connection from Phone
-- 👍 when connection is failing from Phone to Internet, the Viewer will still see Videos/Clips
-- 👍 a second internet can be added to make Phone Stream more reliable
+- 👍 when connection from Phone is failing, the Viewer will still see Videos/Clips (1x Stream Start and 1x VOD)
+- 👍 a second internet can be added to make the Phone Connection more reliable
 - 👍 when switching from WiFi to Mobile and back stream is not going offline
 
 **Negatives**  
@@ -22,6 +38,7 @@
 - 👎 Additional monthly cost for 2nd Internet (Optional)
 - 👎 Takes some time for first Setup
 ---
+
 # 1 - Streaming Phone  
 
 > [!NOTE]   
@@ -33,19 +50,21 @@
 # 2 - SRT/SRTLA Relay
 
 > [!NOTE]   
-> This Server takes the Two SRTLA Streams and combine them to one
-> [!IMPORTANT]   
-> This Service costs $10 USD. Completely free alternatives are also available but need more technical knowledge to setup
+> This Server takes the Two SRTLA Streams and combines them to one SRT Stream
 
-2.a - Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*
+> [!IMPORTANT]   
+> This Service costs $10 USD.
+
+2.a - Create an Account with [Github](https://github.com/signup) *(If you already have one skip to Login)*   
 You then need to Verify your E-Mail Address and [Login](https://github.com/login)
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/bafd6a15-7ec2-4f3e-8a1f-7737e41d9a8f" height="600">
 
 2.b - Once logged in open the [Belabox Sponsorship](https://github.com/sponsors/rationalsa) Page  
  - Scroll down and select the **$10 a month** Tier which includes 1x SRT/SRTLA Relay Server
- - Fill out your Billing Info and Set Up your Payment Info *(Only Credit Card or Paypal supported)*
- - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.  
+ - Fill out your Billing Info and setup your Payment Info *(Only Credit Card or Paypal supported)*
+ - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.
+
 2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and Login/Authorize with your Github Account  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/5385a7b6-e1c4-42ac-a5a1-729cf53dc732" height="600">
@@ -59,11 +78,14 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/8425c1a1-add3-40d1-8082-b03312429539" height="600">
 
-2.f - Scroll down until you see **Moblin Settings** and tap the **Add automatically to Moblin** Button to automatically add the right Server Info in Moblin.  
+2.f - Scroll down until you see **Moblin Settings** and tap the **Add automatically to Moblin** Button to automatically add the right Info in Moblin.  
 
 ---
 # 3 - Streaming Phone
 3.a - Open the **Moblin App**  and go to **Gear** Symbol *(Settings)* on the top right  
+
+<img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/f0723f0a-53a1-441d-990c-00a88d0349f3" width="600">
+
 3.b - Go to **Streams** and then tap the **Belabox Cloud** one  
 3.c - Go to **Video** and set the following settings  
  - **Resolution:** 1920x1080p  
@@ -71,7 +93,7 @@ You then need to Verify your E-Mail Address and [Login](https://github.com/login
  - **Bitrate:** 4500 kbps  
  - **Codec:** HEVC(h2.65)
 
-3.d - Go back then to **Twitch** and enter your Twitch Name and Twitch ID. You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/)  
+3.d - Go back then **active Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
 3.e - Next we want to add our Alerts to Moblin. To do this we go to into our Alerts Dashboard via Browser  
  - [Streamlabs](https://streamlabs.com/dashboard#/alertbox) and copy the Widget URL
 
@@ -97,7 +119,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 4.1.a - **Download [OBS Studio](https://obsproject.com/download)** for your System  
 4.1.b - **Install OBS** Studio and **Launch** it.  
 
-<img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/3555ea78-d6bd-440b-9bdc-15a91799f1a2" height="400">
+<img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/3555ea78-d6bd-440b-9bdc-15a91799f1a2" width="400">
 
 4.1.c - In the Auto-Wizard 
  - Optimize for Streaming
@@ -310,5 +332,7 @@ Here is their [Discord](https://discord.gg/Tm6kf778)
 ### OBS 
 you can check their [Forum](https://obsproject.com/forum/) or just look up one of the hundreds of Youtube Tutorials
 ### NOALBS
+
+
 Here is the Guide on [Github](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching) and their [Discord](https://discord.gg/efWu5HWM2u)
 
