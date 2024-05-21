@@ -251,8 +251,8 @@ env File should now vanish in Finder *(You can show it in Finder by pressing* **
 
 4.2.i - Save and close the file. *Detailed Infos [NOALBS Github](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching)*  
 4.2.j - Start the **noalbs** programm. *There should be an error starting it the first time saying that the developer is not verified, just hit ok*  
-4.2.k - Make sure .sh files are **always opened** with the Terminal app. To do this Control Click the .sh File > Open with > Other. In the Menu by **Enable** choose **All Aplications** and check **Always open With** below. Then choose **Terminal** on the left side and hit **Open**
-4.2.l - Always run NOALBS over the launch.sh File. Check if it shows any Errors. Errors with Chat -> check .evn file. Errors with OBS -> check OBS Websocket or Websocket Settings in config.json
+4.2.k - Make sure .sh files are **always opened** with the Terminal app. To do this Control Click the .sh File > Open with > Other. In the Menu by **Enable** choose **All Aplications** and check **Always open With** below. Then choose **Terminal** on the left side and hit **Open**  
+4.2.l - Always run NOALBS over the launch.sh File. Check if it shows any Errors. Errors with Chat -> check .evn file. Errors with OBS -> check OBS Websocket or Websocket Settings in config.json  
 
 > [!NOTE]  
 > Opening the launch.sh in the Terminal app will always start up NOALBS from within the directory it is in.
