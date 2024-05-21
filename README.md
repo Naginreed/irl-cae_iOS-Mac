@@ -122,6 +122,7 @@ Any normal Mac or Macbook can be used, best cabled directly to your Home Interne
  If you want to buy a new one just for this task, maybe look into Mini-Pc's.
 > [!WARNING]  
 > This PC needs to have a **STABLE** Internet Connection during the whole stream with at least 6Mbit Upload *[Speedtest](https://www.nperf.com)*
+
 > [!NOTE]  
 > The Pictures below are shown for Windows until replaced with MAC ones
 
