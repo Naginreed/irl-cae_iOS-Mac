@@ -44,7 +44,7 @@ This Guide describes a **Cheap and Easy** Solution for
 > [!NOTE]   
 > If you have multiple phones, use the strongest/newest one as Streaming Phone
 
-1.a - Install the **[Moblin App](https://apps.apple.com/us/app/moblin/id6466745933)** from the Apple Play Store
+1.a - Install the **[Moblin App](https://apps.apple.com/us/app/moblin/id6466745933)** from the Apple Store
 
 ---
 # 2 - SRT/SRTLA Relay
@@ -117,13 +117,13 @@ This Guide describes a **Cheap and Easy** Solution for
 # 4 - Home-PC
 Any normal PC or Laptop can be used, best cabled directly to your Home Internet Router. If you want to buy a new one for this, maybe look into Mini-Pc's.
 > [!NOTE]  
-> The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac)
+> The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac) *(These will be updated in the future)*
 
 ## 4.1 OBS
 > [!NOTE]  
-> This is the Programm that converts the Stream back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect*
+> This is the Programm that gets the Stream from the Relay Server and converts it back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect*
 
-4.1.a - **Download [OBS Studio](https://obsproject.com/download)** for your System  
+4.1.a - **Download [OBS Studio](https://obsproject.com/download)**
 4.1.b - **Install OBS** Studio and **Launch** it.  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/3555ea78-d6bd-440b-9bdc-15a91799f1a2" width="400">
@@ -191,9 +191,9 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 ---
 ## 4.2 NOALBS
 > [!NOTE]  
-> This is the Program controls the scene switching via Chat and automatically if no incoming Stream is detected
+> This is the Program controls OBS via Chat-Commands and automatically switches Scenes if Stream from the Phone is detected
 
-4.2.a - **Download [NOALBS](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching/releases)** for your System and unpack them to a location of your liking  
+4.2.a - **Download [NOALBS](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching/releases)** for your System and unpack them to a location of your liking *(i recommend making a Stream and then a NOALBS Sub-Folder)*  
 4.2.b - Inside this Folder you should have at least 3 files (4 for [MAC](#421-noalbs-on-mac))  
  - .env
  - config.json
