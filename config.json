@@ -6,14 +6,15 @@
   },
   "switcher": {
     "bitrateSwitcherEnabled": true,
-    "onlySwitchWhenStreaming": false,
-    "instantlySwitchOnRecover": true,
-    "autoSwitchNotification": false,
+    "onlySwitchWhenStreaming": true,
+    "instantlySwitchOnRecover": false,
+    "autoSwitchNotification": true,
     "retryAttempts": 5,
     "triggers": {
       "low": 800,
       "rtt": 1500,
       "offline": 300
+      "rttOffline": null
     },
     "switchingScenes": {
       "normal": "Live",
@@ -29,6 +30,9 @@
     },
     "name": "BELABOX cloud",
     "priority": 0
+    "overrideScenes": null,
+    "dependsOn": null,
+    "enabled": true
       }
     ]
   },
@@ -55,17 +59,40 @@
     "enableAutoStopStreamOnHostOrRaid": true,
     "announceRaidOnAutoStop": true,
     "commands": {
-      "Fix": {
-        "permission": "Mod",
-        "alias": ["fix"]
-      },
-      "Switch": {
-        "permission": "Mod",
-        "alias": ["sw"]
+      "EndingScene": {
+        "permission": null,
+        "userPermissions": null,
+        "alias": [
+          "end"
+        ]
       },
       "Bitrate": {
         "permission": "Mod",
-        "alias": ["br"]
+        "userPermissions": null,
+        "alias": [
+          "br"
+        ]
+      },
+      "Switch": {
+        "permission": "Mod",
+        "userPermissions": null,
+        "alias": [
+          "sw"
+        ]
+      },
+      "PrivacyScene": {
+        "permission": null,
+        "userPermissions": null,
+        "alias": [
+          "brb"
+        ]
+      },
+      "Fix": {
+        "permission": "Mod",
+        "userPermissions": null,
+        "alias": [
+          "fix"
+        ]
       }
     }
   },
