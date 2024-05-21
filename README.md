@@ -104,13 +104,13 @@ This Guide describes a **Cheap and Easy** Solution for
 3.f - Head back to Moblin and go to the **Settings** Screen. 
  - Tap on **Scenes** then on **Widgets** then **Create**. 
  - Name it **Alerts**  
-3.g - Set type to **Browser**
+3.g - Set type to **Browser**  
  - paste the Widget URL into **URL** Field.  
  - Set Width to 600 and Height to 400 *(you change size if the Alerts are wrong size)*  
-3.h - Go back to the **Scenes** Menu and tap on **My scene** 
+3.h - Go back to the **Scenes** Menu and tap on **My scene**   
  - Then tap **Add Widget** and choose the **Alert**-Widget we just created.
  - Make sure its on the Top of the List.  
-3.i - Go back to the **Main View** and **check** that **Chat** is loading and Test that **Alerts** are **working** 
+3.i - Go back to the **Main View** and **check** that **Chat** is loading and Test that **Alerts** are **working**  
  - Streamlabs *(Test-Alerts are available in the Dashboard)*  
 
 ---
