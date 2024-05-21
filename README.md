@@ -83,7 +83,7 @@ This Guide describes a **Cheap and Easy** Solution for
 
 ---
 # 3 - Streaming Phone
-3.a - Open the **Moblin App**  and go to **Gear** Symbol *(Settings)* on the top right  
+3.a - Open the **Moblin App** and go to **Gear** Symbol *(Settings)* on the top right  
 
 <img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/f0723f0a-53a1-441d-990c-00a88d0349f3" width="600">
 
@@ -117,16 +117,20 @@ This Guide describes a **Cheap and Easy** Solution for
  - Streamlabs *(Test-Alerts are available in the Dashboard)*  
 
 ---
-# 4 - Home-PC
-Any normal PC or Laptop can be used, best cabled directly to your Home Internet Router. If you want to buy a new one for this, maybe look into Mini-Pc's.
+# 4 - Mac-PC
+Any normal Mac or Macbook can be used, best cabled directly to your Home Internet Router.
+ If you want to buy a new one just for this task, maybe look into Mini-Pc's.
+> [!WARNING]  
+> This PC needs to have a **STABLE** Internet Connection during the whole stream with at least 6Mbit Upload *[Speedtest](https://www.nperf.com)*
 > [!NOTE]  
-> The following Pictures are from Windows, but the steps are mostly the same except additional ones for [MAC](#421-noalbs-on-mac) *(These will be updated in the future)*
+> The Pictures below are shown for Windows until replaced with MAC ones
+
 
 ## 4.1 OBS
 > [!NOTE]  
-> This is the Programm that gets the Stream from the Relay Server and converts it back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect*
+> This is the Programm that gets the Stream from the Relay Server and converts it back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect
 
-4.1.a - **Download [OBS Studio](https://obsproject.com/download)**
+4.1.a - **Download [OBS Studio](https://obsproject.com/download)** for your System  
 4.1.b - **Install OBS** Studio and **Launch** it.  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/3555ea78-d6bd-440b-9bdc-15a91799f1a2" width="400">
@@ -180,7 +184,7 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/c993bb43-a3ea-4bc5-a75a-c46858d2305e" width="600">
 
-4.1.i - Then Copy *(CTRL+C)* the **Bellabox-Cloud**-Source over to the **Low** Scene  
+4.1.i - Then Copy *(Command+C)* the **Bellabox-Cloud**-Source over to the **Low** Scene  
 4.1.j - Go To **Settings** on the bottom right. In the new Video select **Audio** and **Disable all Global Audio Devices**  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/20b58802-fc64-491d-9d74-3bd0aef2d93d" width="500">
@@ -197,12 +201,21 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 > This is the Program controls OBS via Chat-Commands and automatically switches Scenes if Stream from the Phone is detected
 
 4.2.a - **Download [NOALBS](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching/releases)** for your System and unpack them to a location of your liking *(i recommend making a Stream and then a NOALBS Sub-Folder)*  
-4.2.b - Inside this Folder you should have at least 3 files (4 for [MAC](#421-noalbs-on-mac))  
+4.2.b - Inside this Folder you should have these 4 files  
  - .env
  - config.json
  - noalbs
+ - launch.sh
 
-<img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/98043a2b-2497-40af-88c7-873ce2d85848" height="100">
+Sometimes .env will not show or download due to the . in the name
+[.env](env)
+Just Download it from here again and place it in the same folder
+
+4.2.c - Open up a Terminal Window and enter command
+`cd /Users/`yourusername`/Documents/Stream/NOALBS`
+where **yourusername** = your username on the MAC and the Path to the folder, if you have a different one. Then hit **Enter**
+`mv env .env` and hit **Enter**
+env File should now vanish in Finder *(You can show it in Finder by pressing* **Command + Shift + .** *)*
 
 4.2.c - For NOALBS to respond to our Chat commands we need to give access to a Twitch Account. Once you logged in with your preferred Account in Twitch click on this **[Link](https://twitchapps.com/tmi)**, then hit **Connect** and copy the **oauth:xxxxxxx** Code  
 
@@ -237,37 +250,15 @@ Any normal PC or Laptop can be used, best cabled directly to your Home Internet 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/f16885ce-8c51-4bb4-92fa-b0e7311f3b41" height="100">
 
 4.2.i - Save and close the file. *Detailed Infos [NOALBS Github](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching)*  
-4.2.j - Start the **noalbs** programm. It should look like the picture below. Errors are also shown here  
+4.2.j - Start the **noalbs** programm. *There should be an error starting it the first time saying that the developer is not verified, just hit ok*  
+4.2.k - Make sure .sh files are **always opened** with the Terminal app. To do this Control Click the .sh File > Open with > Other. In the Menu by **Enable** choose **All Aplications** and check **Always open With** below. Then choose **Terminal** on the left side and hit **Open**
+4.2.l - Always run NOALBS over the launch.sh File. Check if it shows any Errors. Errors with Chat -> check .evn file. Errors with OBS -> check OBS Websocket or Websocket Settings in config.json
 
-<img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/0329e383-07f3-40e8-8f80-de3d0fa3391d" height="270">
-
-### 4.2.1 NOALBS on MAC
-You must have these 4 files in the *same folder*
-- .env
-- noalbs
-- config.json
-- launch.sh
-
-To keep the files together i recommend to make new folders under Documents -> Stream -> NOALBS
-
-Sometimes .env will not show or download due to the . in the name
-[.env](env)
-Just Download it from here again and place it in the same folder
-
-Open up a Terminal Window and enter command
-`cd /Users/`yourusername`/Documents/Stream/NOALBS`
-where **yourusername** = your username on the MAC and the Path to the folder, if you have a different one. Then hit **Enter**
-`mv env .env` and hit **Enter**
-env File should now vanish in Finder *(You can show it in Finder by pressing* **Command + Shift + .** *)*
-
-4.2.1.a - Make sure .sh files are **always opened** with the Terminal app  
-4.2.1.b - Follow these instructions from Developer  
-`You have to first open the NOALBS executable, and confirm that the developer is not verified, NOALBS should run with Errors. Close it. After that you can start it with .sh file`  
 > [!NOTE]  
 > Opening the launch.sh in the Terminal app will always start up NOALBS from within the directory it is in.
 
 > [!TIP]
-> You can also make an Alias to the launch.sh and put it on the desktop to not forget to run it. 
+> You can also make an Alias to the launch.sh and put it on the desktop to not forget to run it.
 
 ---
 # 5 - Make OBS pretty
@@ -306,34 +297,50 @@ Following is an Explanation on what Scene is used for what and what People norma
 - Simple Text "Ending Stream"
 
 ---
-# 6 - First Test  
-6.a - to Start the stream, go into your Twitch Chat and enter **!start**  
-OBS will now start the Stream in the **Starting**-Scene  
-6.b - Go to your Streaming Phone into the **Moblin**-App and start your Stream there  
-6.c - After a few Seconds the Stream from the Phone reaches the OBS and NOALBS switches to **Live-Scene**  
-6.d - When you loose Connection or you stop the Stream in **Moblin**-App,
-it should automatically switch to **Disconnected** and back as soon as Phone Stream is ok again.  
-6.e - You can manually switch to **Privacy** with the Chat-Command **!privacy** and back with **!live**  
-6.f - To End your Stream you either put **!stop** into Twitch-Chat or you make a Raid to another Streamer  
-
----
-# 7 - Normal Operation 
+# 6 - Normal Operation 
 > [!NOTE]  
 > Before **every** IRL-Stream you need to do the following
 
-7.a - **Start** your **PC** at Home an make sure it has a Internet Connection and doesn't turn off automatically  
-7.b - **Go outside** to where you want to start to stream  
-7.c - Enter **!start** in **Twitch-Chat** to start Stream to Twitch  
-7.d - **Start Stream in Moblin App**, after a few seconds you are live  
-7.e - Enter **!stop** in **Twitch-Chat** or **Raid another streamer** to stop Stream  
+6.a - **Start** your **PC** at Home an make sure it has a Internet Connection and that the PC doesn't turn off automatically  
+6.b - **Start OBS & NOALBS** on your PC  
+6.c - **Go outside** to where you want to start your IRL-Stream  
+6.d - Enter **!start** in **Twitch-Chat** to start Stream to Twitch  
+6.e - **Start Stream in IRL Pro** -> after a few seconds you are switched to Live-Scene  
+6.f - If you stop or loose connections on the Phone -> after a few seconds you are switched to Disconnected  
+6.g - As soon as connection from Phone to PC is restored -> after a few seconds you are switched back to Live  
+6.h - Switch to Privacy and back manually with Chat commands `!brb` and `!live`  
+6.i - **Stop the Stream** automatically only if you raid someone or with Chat command `!stop`  
+
+> [!IMPORTANT]  
+> With every Scene Change in OBS you will see a text Message in Chat
 
 ---
-# 8 - 2nd Internet Connection  
-As seen in the Plan there should be 2x Internet Connection for your phone to reduce the chance of outtages for the Live Stream.  
-Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active.    
+# 7 - 2nd Internet Connection  
+> [!NOTE]  
+> This is optional and improves stream stability alot in many cases. But it doesnt prevent outtages in No Service Areas like deep into the Mountains or Tunnels.
+
+As seen in the [Map](#map) there can be 2nd Internet Connection for your phone to reduce the chance of outtages for the Live Stream.  
+Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active.  
+
 > [!IMPORTANT]  
 > For this second SIM a different Provider is highly recommended.
 > The 2nd Sim will also consume about ~50% of the overall Data
+
+---
+# 8 - Stream directly to twitch  
+
+If for whatever reason the Relay or Home PC is not working you can easily switch back to direct Streaming in the Moblin App.  
+
+8.a - Got to **Settings** > **Streams** and Create  
+8.b - Tap on Twitch an follow the instructions  
+8.c - Go to **Video** and set the following settings  
+ - **Resolution:** 1920x1080p  
+ - **FPS:** fixed 30fps  
+ - **Bitrate:** 5800 kbps  
+ - **Codec:** h.264
+
+8.d - Go back then **active Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
+8.e - Go back to **Settings** > **Streams**. Deactivate Belabox and activate Twitch
 
 ---
 # 9 - Additional Help  
