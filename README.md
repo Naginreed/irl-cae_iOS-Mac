@@ -20,7 +20,7 @@ This Guide describes a **Cheap and Easy** Solution for
 ---
 ## Map
 
-<img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/e472c8db-bd46-4bd3-9243-d7d0daf26499">
+<img src="https://github.com/Naginreed/irl-cae_iOS-Mac/assets/71943093/c420ab6e-570c-47de-950a-c08653ec5847">
 
 > [!NOTE]  
 > At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process.
