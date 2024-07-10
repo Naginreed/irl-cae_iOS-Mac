@@ -6,33 +6,33 @@
   },
   "switcher": {
     "bitrateSwitcherEnabled": true,
-    "onlySwitchWhenStreaming": true,
+    "onlySwitchWhenStreaming": false,
     "instantlySwitchOnRecover": false,
     "autoSwitchNotification": true,
     "retryAttempts": 5,
     "triggers": {
-      "low": 800,
+      "low": 600,
       "rtt": 1500,
-      "offline": 300
+      "offline": 300,
       "rttOffline": null
     },
     "switchingScenes": {
       "normal": "Live",
       "low": "Low",
-      "offline": "Disconnected"
+      "offline": "Lost"
     },
-  "streamServers": [
-  {
-    "streamServer": {
-      "type": "Belabox",
-      "statsUrl": "REPLACE_BELLABOX_URL",
-      "publisher": "REPLACE_OBS_WEBSOCKET_PASSWORD"
-    },
-    "name": "BELABOX cloud",
-    "priority": 0
-    "overrideScenes": null,
-    "dependsOn": null,
-    "enabled": true
+    "streamServers": [
+      {
+        "streamServer": {
+          "type": "Belabox",
+          "statsUrl": "REPLACE_BELLABOX_URL",
+          "publisher": "REPLACE_BELLABOX_INGEST_KEY"
+        },
+        "name": "BELABOX cloud",
+        "priority": 0,
+        "overrideScenes": null,
+        "dependsOn": null,
+        "enabled": true
       }
     ]
   },
@@ -51,7 +51,9 @@
   "chat": {
     "platform": "Twitch",
     "username": "REPLACE_STREAMER_NAME",
-    "admins": ["REPLACE_STREAMER_NAME"],
+    "admins": [
+      "REPLACE_STREAMER_NAME"
+    ],
     "language": "EN",
     "prefix": "!",
     "enablePublicCommands": false,
@@ -60,47 +62,43 @@
     "announceRaidOnAutoStop": true,
     "commands": {
       "EndingScene": {
-        "permission": null,
-        "userPermissions": null,
+        "permission": "Mod",
         "alias": [
           "end"
         ]
       },
-      "Bitrate": {
-        "permission": "Mod",
-        "userPermissions": null,
-        "alias": [
-          "br"
-        ]
-      },
       "Switch": {
         "permission": "Mod",
-        "userPermissions": null,
         "alias": [
+          "ss",
           "sw"
-        ]
-      },
-      "PrivacyScene": {
-        "permission": null,
-        "userPermissions": null,
-        "alias": [
-          "brb"
         ]
       },
       "Fix": {
         "permission": "Mod",
-        "userPermissions": null,
         "alias": [
-          "fix"
+          "f"
+        ]
+      },
+      "PrivacyScene": {
+        "permission": "Mod",
+        "alias": [
+          "brb"
+        ]
+      },
+      "Bitrate": {
+        "permission": "Mod",
+        "alias": [
+          "b"
         ]
       }
     }
   },
   "optionalScenes": {
-    "starting": "Starting",
-    "ending": "Ending",
-    "privacy": "Break",
-    "refresh": "Refresh"
+    "starting": "Start",
+    "ending": "End",
+    "privacy": "Brb",
+    "refresh": null
   },
   "optionalOptions": {
     "twitchTranscodingCheck": false,
