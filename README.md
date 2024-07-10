@@ -44,7 +44,7 @@ This Guide describes a **Cheap and Easy** Solution for
 > [!NOTE]   
 > If you have multiple phones, use the strongest/newest one as Streaming Phone
 
-1.a - Install the **[Moblin App](https://apps.apple.com/us/app/moblin/id6466745933)** from the Apple Store
+1.a - Follow this [Youtube Guide](https://www.youtube.com/watch?v=GbR0xfpJXJE) to install Moblin and set it up for direct Twitch Streaming _(as Backup)_
 
 ---
 # 2 - SRT/SRTLA Relay
