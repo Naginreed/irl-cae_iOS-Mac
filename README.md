@@ -10,7 +10,7 @@ This Guide describes a **Cheap and Easy** Solution for
 
 > [!IMPORTANT]  
 > <details>
-> <summary>You can use the **3 Lines** at the top right to jump to any Section of the Guide</summary>
+> <summary>You can use the 3 Lines at the top right to jump to any Section of the Guide</summary>
 > <img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/ddcfa25e-e806-48a7-9882-60fdc8794947">
 > </details>
 ---
